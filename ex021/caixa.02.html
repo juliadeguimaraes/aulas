@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUPING TAGS</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: lightgrey;
+        }
+
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav {
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+            /*
+                BOX-SHADOW: DESLOCAMENTO HORIZONTAL, VERTICAL, ESPALHAMENTO E COR DA SOMBRA.
+            */
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            /* Podemos confirgurar as 4 bordas com border radius
+            */
+        }
+
+        aside {
+            font-size: 12px;
+            font-weight: lighter;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto;
+            border-radius: 50%;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--antigamente era muito utilizado as divs para construir o site. Porém, hoje em dia é melhor usar tags semânticas para essa construção.-->
+    <!-- HEADER = cabeçalho -->
+    <header>
+        <h1>Meu site</h1>
+        <!-- Menu com links-->
+         <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+         </nav>
+    </header>
+    <!--MAIN - Conteúdo principal-->
+    <main>
+        <!-- SECTION - SEÇÕES-->
+         <section id="noticias">
+            <article>
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores adipisci ea ut autem nemo cumque alias facere sint, laborum architecto culpa voluptates. Eveniet natus placeat blanditiis nulla! Dolor, ipsam consequuntur?</p>
+                <aside>Artigo por José da Silva</aside>
+            </article>
+         </section>
+         <section id="artigo">
+            <article>
+                <h2>Noticias do mundo</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi dolorem dolor earum perferendis voluptate nobis provident delectus recusandae ipsa culpa! Magnam, necessitatibus! Delectus alias qui dicta earum aperiam tempora ea.</p>
+                <aside>Artigo por Maria da Silva</aside>
+            </article>
+         </section>
+    </main>
+    <!-- FOOTER - Rodapé -->
+     <footer>Feito por Julia</footer>
+     <div id="bola"></div>
+</body>
+</html>

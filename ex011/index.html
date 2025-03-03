@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="img/foto-m.png" type="image/png">
+        <img src="img/foto-g.png" alt="imagem G flexível">
+    </picture>
+    <!-- O source faz as imagens mudaram acompanhando o aumento ou diminuição da tela. Para usar é necessário  colocar a tag PICTURE e sempre a imagem menor fica em cima da maior e assim por diante, Se colocar o source desordenado dá errado.-->
+    <h2>Reproduzindo aúdios</h2>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <audio src="midia/thesummoning- sleeptoken.mp3" controls autoplay></audio>
+    <!-- funciona mp3, wav e ogg-->
+    <!-- Podemos utilizar o source também em audios, caso um não funcione, os outros vão tentar funcionar-->
+    <audio>
+        <source src="midia/thesummoning- sleeptoken.mp3" type="audio/mpeg">
+        <source src="midia/thesummoning- sleeptoken.ogg" type="audio/ogg">
+        <source src="midia/thesummoning- sleeptoken.wav" type="audio/wav">
+    </audio>
+    <!-- preload é muito ruim no auto ou none, porque não carrega nada no site com auto e o none só carrega se clicar no audio. Metadata é interessante...-->
+    <!-- Loop serve para o audio ficar tocando sem parar
+    -->
+    <!-- Evitar usar wav por que é muito pesado.-->
+
+    <!-- utilize o handbrake open source para converter os vídeos.-->
+</body>
+</html>

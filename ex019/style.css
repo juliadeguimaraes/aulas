@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* opcional, porém importante lembrar as vezes para não ter problemas com caracteres especiais. */
+/*
+ HTML ID = CSS #
+ HTML CLASS = CSS .
+*/
+
+body {
+    background-color: #55b4e0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #387784;
+}
+
+#principal {
+    text-align: center;
+    color: #52aed8;
+    background-color: #2b5c72
+}
+
+h2 {
+    color: #4592b6;
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: yellow;
+}
+
+.avancado {
+    color: red;
+}
+
+.destaque {
+    background-color: #c5c56070;
+}

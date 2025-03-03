@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <!-- Evite hospedagem local, e a qualidade maior que 1080p custa muito para hospedar.-->
+    <!-- Os formatos suportados para vídeo são: m4v, mp4, webm e ogv-->
+    
+    <video src="midia/thesummoning-sleeptokenvideo.mp4" width="500" controls poster="img/sleeptokenlogo.jpeg"></video>
+    <!-- Utilize o source para hospedar todos os formatos de vídeos. Coloque sempre em primeiro lugar o menor tamanho de arquivo. -->
+     <!-- Sempre avise o cliente que hospedar o vídeo diretamente no servidor do site causa um custo muito alto por que demanda muitos "downloads" pelos clientes. Quanto mais acesso, mais espaço ocupa/maior consumo de banda e mais custa para hospedar o site. -->
+    <h2>Vídeos do youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=pXwZX1n2Z-VPlJE_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- Utilizando os links externos, não consome dados do servidor do site e sim do youtube.-->
+     <!-- O vimeo é uma boa opção de você quer usar um link externo para seu vídeo mas sem que outros usuários possam ver seu vídeo fora do seu site, como acontece no youtube.-->
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border: 10px solid darkcyan;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* sempre que for declarar padding, comece de cima e siga os valores em sentido horário. Ou seja: top, right, bottom, left. 
+            */
+            margin: auto;
+            /*para deixar elemento no meio, se for uma caixa
+            */
+
+            /*
+                simplificando: shorthands
+            */
+
+            border: 10px solid blue;
+            padding: 10px 10px 10px 10px;
+            /*
+                no padding, podemos declarar apenas 1 valor, se os 4 lados forem receber valores iguals. No caso acima poderia ficar apenas:
+
+                padding: 10px;
+
+                Podemos utilizar o shorthand no padding para dois valores diferentes. Como se fosse para formar um retângulo. Exemplo:
+
+                padding: 10px 20px;
+                isso significa que 10px ficará em top e bottom e 20px ficará em right e left.
+            */
+            margin: 20px 20px 40px 20px;
+            /* se utilizar auto na margin left e right, automaticamente (rsrsrs) a caixa fica centralizada por que é calculado em auto as margens laterais.
+            */
+
+            outline: 5px dashed salmon;
+
+        }
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixas box-level</h1>
+    <p>Parágrafos também são exemplos de box level, mas os <a href="#">links são exemplos de caixas inline-level.</a> vamos ver como funciona</p>
+    <!-- Podemos usar o devtools do google chrome para alterar altura e largura das caixas, sem modificar nada no arquivo original. Apenas com a finalidade de fazer testes.-->
+</body>
+</html>

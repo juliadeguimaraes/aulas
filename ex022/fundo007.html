@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização vertical</title>
+    <style>
+        #container {
+            background-size: 100% 100%;
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+
+            position: relative; /*valor padrão de elementos*/
+            height: 96vh;
+            padding: 10px;
+        }
+        
+        /*
+        Para fazer a centralização vertical de elementos, precisa seguir uma lógica onde o elemento que está "por fora", contendo outro elemento tenha uma posição relativa, e o elemento que precisa ser centralizado esteja em uma posição absoluta.
+        A partir dai, conseguimos configurar left e top (valores usados para centralizar o elemento)
+        */
+
+        /* COMO FICA O CÓDIGO PARA O ALINHAMENTO*/
+        #conteudo {
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            position: absolute; /* posicionamento absoluto, elemento que vai ser centralizado*/
+            left: 50%;
+            top: 50%;
+
+            /*Mesmo utilizando left e top, o elemento não ficará alinhado. Geralmente se usa como referência a ponta de cima e da esquerda para alinhar. Para resolver, utilizamos o transform:*/
+
+            transform: translate(-50%, -50%); /*o transform tem varias propriedades, mas a que mais utilizamos é o translate que tranforma o ponto de referencia utilizado para centralizar ou para mudar o lugar do elemento.
+            Quando usamos transform e um valor negativo ele se mexe para a esquerda e para cima. Numeros positivos para direita e para baixo.*/
+        }
+        </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+        
+        </article>
+    </section>
+</body>
+</html>

@@ -10,15 +10,27 @@
             background-color: black;
             background-image: url('img/wallpaper002.jpg');
             background-repeat: no-repeat;
-            background-position: cover;
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed; /*permite a imagem ficar fixa na tela sem duplicar e sem mostrar a cor de fundo nas laterais.*/
         }
+
+        /*
+            SHORTHAND BACKGROUND:
+            color > image > position / > size > repeat > attachment
+
+            a barra (/) é utilizada para separar as propriedades de posicionamento e tamanho, para evitar confusão entre as duas.
+
+            background: black url('img/wallpaper002.jpg') center center / cover no-repeat fixed;
+        */
 
         /* CONTAIN - faz com que a imagem seja 100% exibida sem nenhum tipo de corte.
         COVER - cobre a tela inteira, mesmo que seja necessário cortar um pedacinho da imagem
+        ATTACHMENT - vínculo. Valor padrão: scroll
         */
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
@@ -31,6 +43,10 @@
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel repudiandae quasi officiis odio et perspiciatis voluptatibus ratione dolor vitae? Optio aliquam facilis doloribus nam, maxime eius quae quam voluptate tenetur? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente, ad dolorem voluptas doloremque consectetur maiores repellat quisquam praesentium? Quasi non obcaecati cupiditate quis facilis quos natus laboriosam ducimus quidem architecto! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis iste doloremque alias incidunt vitae assumenda debitis error at, quae quia reprehenderit laudantium a ratione veritatis molestias praesentium autem, animi earum?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur aliquid suscipit, similique ullam saepe fugit? Minima at laudantium quia rem eveniet modi quasi quod laboriosam adipisci sunt, placeat nobis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos debitis, tenetur dolorem assumenda sint cumque adipisci, provident omnis minima quasi molestiae corporis facilis ut delectus? Nam magnam veniam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ratione hic dolorum necessitatibus deserunt, aliquid sint recusandae quae deleniti saepe perferendis fugiat odit, provident neque eum non quasi earum quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur aliquid suscipit, similique ullam saepe fugit? Minima at laudantium quia rem eveniet modi quasi quod laboriosam adipisci sunt, placeat nobis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos debitis, tenetur dolorem assumenda sint cumque adipisci, provident omnis minima quasi molestiae corporis facilis ut delectus? Nam magnam veniam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ratione hic dolorum necessitatibus deserunt, aliquid sint recusandae quae deleniti saepe perferendis fugiat odit, provident neque eum non quasi earum quia.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consectetur aliquid suscipit, similique ullam saepe fugit? Minima at laudantium quia rem eveniet modi quasi quod laboriosam adipisci sunt, placeat nobis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur eos debitis, tenetur dolorem assumenda sint cumque adipisci, provident omnis minima quasi molestiae corporis facilis ut delectus? Nam magnam veniam laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ratione hic dolorum necessitatibus deserunt, aliquid sint recusandae quae deleniti saepe perferendis fugiat odit, provident neque eum non quasi earum quia.</p>
+
+
     </main>
 
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 02 - Mesclagem de celulas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-spacing: 10px;
+            width: 500px;
+        }
+
+        td {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        td:hover {
+            background-color: lightgray;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        INSTRUÇÕES DESAFIO 02
+
+        - Celula A ocupa 4 colunas; 
+        - Celular B ocupa 4 linhas do lado direito;
+        - Celula C ocupa 4 linhas do lado esquerdo;
+        - D, E, F, G, H, I, J, K, L entre C e B;
+        - M por ultimo, ocupando 4 colunas.
+    -->
+    <table>
+       <tr>
+        <td colspan="4">A</td>
+        <td rowspan="4">B</td>
+    </tr>
+    <tr>
+        <td rowspan="4">C</td>
+        <td>D</td>
+        <TD>E</TD>
+        <td>F</td>
+       </tr>
+    <tr>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+    </tr>
+    <tr>
+        <td>J</td>
+        <td>K</td>
+        <td>L</td>
+    </tr>
+    <tr>
+        <td colspan="4">M</td>
+    </tr>
+    </table>
+</body>
+</html>

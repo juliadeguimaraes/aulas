@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .c1, .c2, .c4, .c5, .c6, .c7, .c9, .c12, .c13, .c14, .c15 {
+            background-color: yellow;
+        }
+
+        .c3, .c8, .c10, .c11 {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        INSTRUÇÕES DESAFIO 01:
+
+        - criar celulas de 1 a 4 centralizadas
+        - Celula numero 3 ocupando 2 linhas
+        - Criar ceula 5, 6 e 7
+        - Celula 8 ocupando 3 colunas e 9 apenas uma
+        - 10 em duas linhas
+        - 11 em duas colunas
+        - 12 sozinho;
+        - 13, 14 e 15.    
+    -->
+
+    <table>
+        <tr>
+            <td class="c1">1</td>
+            <td class="c2">2</td>
+            <td class="c3" rowspan="2">3</td>
+            <td class="c4">4</td>
+        </tr>
+        <tr>
+            <td class="c5">5</td>
+            <td class="c6">6</td>
+            <td class="c7">7</td>
+        </tr>
+        <tr>
+            <td colspan="3" class="c8">8</td>
+            <td class="c9">9</td>
+        </tr>
+        <tr>
+        </tr>
+        <tr>
+            <td rowspan="2" class="c10">10</td>
+            <td colspan="2" class="c11">11</td>
+            <td class="c12">12</td>
+        </tr>
+        <tr>
+            <td class="c13">13</td>
+            <td class="c14">14</td>
+            <td class="c15">15</td>
+        </tr>
+    </table>
+</body>
+</html>

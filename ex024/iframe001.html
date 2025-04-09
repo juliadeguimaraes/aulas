@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de iframe</title>
+    <style>
+        iframe {
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando o uso de iframe</h1>
+    <p>Acessando o site do
+        <iframe src="https://cursoemvideo.com" frameborder="0" scrolling="no"></iframe>    
+    curso em vídeo para aprender a programar.</p>
+    <p>
+        o repositório do guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0"></iframe>
+        é bem legal!
+    </p>
+    <!--Alguns navegadores não são compatíveis com iframe.
+        Caso não funcione, coloque dentro do iframe um link para a pessoa ser redirecionada.
+
+        <iframe src="..."
+            <a href="..." target="_blank"></a>
+        </iframe>   
+
+        Dessa forma.
+    -->
+
+    <!--
+        SCROLLING
+        Usamos o scrolling por conta da barra de rolagem. No geral, todo iframe cria uma barra de rolagem se o conteúdo for maior que o iframe. Porem temos a opçõa:
+
+        auto: que deixa a barra de rolagem.
+        yes: que cria barra de rolagem mesmo que o conteúdo não seja extenso.
+        no: tira a barra de rolagem, mesmo com o conteúdo extenso.
+    -->
+</body>
+</html>

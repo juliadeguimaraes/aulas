@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate incidunt dolores magnam ex, ipsa unde accusantium corporis dignissimos omnis voluptates architecto cum maiores eius earum cumque sapiente fugiat culpa odio.</p>
+    <iframe src="pagina-extra/pag004.html" sandbox="sandbox" >
+        <p>seu navegador não é compatível</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis assumenda est aperiam voluptate repudiandae nostrum commodi quaerat necessitatibus, labore magni odit aliquid repellat sit quisquam veritatis neque quod aliquam dicta!</p>
+
+    <!--
+        SANDBOX
+        Quando utilizamos sandbox = sandbox em nosso iframe, automaticamente o site ou o que estiver dentro do iframe perde suas funcionalidades:
+        - Não pode enviar ou receber dados de formulários;
+        - Não pode mais executar scripts;
+        - Desabilita todo tipo de API, janelas modais e popups;
+        - Desabilita todo tipo de plugin;
+        - Evita que o site dentro do iframe assuma a navegaão top leval do navegador;
+        - Bloqueia recursos como autoplay e foco automático.
+
+        REFERREPOLICY = "NO-REFErRER-WHEN-DOWNGRADE": Serve para que não seja possível coletar nenhum tipo de informação do usuário do site que está no iframe.
+
+        sandbox = "outros parametros", você pode permitir algumas coisas dentro do iframe se confiar no site. por exemplo ALLOW FORMS que permite a coleta de dados de formulário dentro do iframe.
+    -->
+</body>
+</html>

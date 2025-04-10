@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframe</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, ad nihil ratione quo ex fugit sequi nisi dolor id neque quasi saepe cupiditate. Soluta voluptatibus nisi quia accusantium praesentium nam.</p>
+    <ul>
+        <li>
+            <a href="pagina-extra/pag001.html" target="frame">Primeira página</a>
+        </li>
+        <li>
+            <a href="pagina-extra/pag002.html" target="frame">Segunda página</a>
+        </li>
+        <li>
+            <a href="pagina-extra/pag003.html" target="frame">Terceira página</a>
+        </li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam possimus in cum earum impedit consectetur accusantium a dolore, eius nemo quod beatae saepe? Autem, ipsum tenetur eum rerum cum iste.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ullam culpa, assumenda voluptate, voluptatum eos quaerat incidunt ab nihil, vel alias iure! Laborum unde numquam eum incidunt illo nam nisi!</p>
+
+    <iframe srcdoc="<h1> escolha uma das opçoes acima </h1><img src=''" name="frame">
+        <p>infelizmente seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium blanditiis adipisci a porro ea pariatur esse veritatis consectetur corrupti omnis tempore aliquam laborum, hic quas ratione et magnam, illo perspiciatis.</p>
+
+    <!--
+        TARGET = "NAME"
+
+        NESTE caso nomeamos o iframe para que ao clicar no link, seja carregado o site ou o elemento dentro do iframe.
+        Neste caso, usamos target =  "nome dado ao frame" e no iframe colocamos name ="nome escolhido"
+
+        SRCDOC = permite colocar como paramêtro especificações do HTML. Podemos colocar dentro o parametro para imagens, porem o src sera com aspas simples 
+        img src = ''
+
+        Utilize esse recurso mais para aprendizado, não é recomendado utilizar esse recurso em excesso.
+    -->
+</body>
+</html>

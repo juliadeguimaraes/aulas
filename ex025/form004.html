@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 04</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <p>
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail">
+        </p>
+        <p>
+            <label for="itel">Telefone:</label>
+            <input type="tel" name="tel" id="itel">
+        </p>
+    </form>
+    <hr>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="name" id="iname">
+            </p>
+            <p>
+                <label for="isobren">Sobrenome:</label>
+                <input type="text" name="sobren" id="isobren">
+            </p>
+            <p>
+                <label for="inasc">Data de nascimento:</label>
+                <input type="date" name="nasc" id="inasc">
+            </p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Dados Adicionais</legend>
+        <form action="cadastro.php" method="get">
+            <p>
+                <label for="igen">Genero:</label>
+                <input type="text" name="gen" id="igen">
+            </p>
+            <p>
+                <label for="ialtura">Altura:</label>
+                <input type="number" name="altura" id="ialtura">
+            </p>
+        </form>
+    </fieldset>
+    <form action="cadastro.php">
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

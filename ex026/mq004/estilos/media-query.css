@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+/* TODAS AS DEMAIS MÍDIAS */
+
+@media print {
+    body {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+        text-align: center;
+    }
+
+    img#print {
+        display: block;
+    }
+
+    img#phone, #tablet, #pc, #tv, #print {
+        display: none;
+        margin: auto;
+    }
+
+    main::after{
+        content: 'impressão feita na aula do CURSO EM VIDEO';
+        font-size: 0.5em;
+    }
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#tablet {
+        display: block;
+    }
+
+    img#phone, #tablet, #pc, #tv, #print {
+        display: none;
+        margin: auto;
+    }
+}
+
+/*DESKTOP*/ 
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    img#pc {
+        display: block;
+    }
+
+    img#phone, #tablet, #pc, #tv, #print {
+        display: none;
+        margin: auto;
+    }
+}
+
+/*TELAS GRANDES*/
+
+@media screen and (min-width: 1201px){
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#tv {
+        display: block;
+    }
+
+    img#phone, #tablet, #pc, #tv, #print {
+        display: none;
+        margin: auto;
+    }
+}

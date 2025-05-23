@@ -36,11 +36,11 @@ h1 {
     text-shadow: 2px 2px 2px black;
 }
 
-img#phone {
+#phone {
     display: block;
 }
 
-img#phone, #tablet, #pc, #tv, #print {
+#phone, #tablet, #pc, #tv, #print {
     display: none;
     margin: auto;
 }
